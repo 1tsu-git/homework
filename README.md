@@ -1,8 +1,12 @@
 # diceコマンド
 ![test](https://github.com/1tsu-git/homework/actions/workflows/test.yml/badge.svg)
+
 ６面ダイスを振るコマンドです。合計値を足すことができます。
-例　dice 2　
+
+例　dice 2
+　
 12
+
 3
 
 ## 必要なソフトウェア
