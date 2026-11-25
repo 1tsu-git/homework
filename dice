@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
 # SPDX-FileCopyrightText: 2026 Itsuki Okubo
 # SPDX-License-Identifier: BSD-3-Clause
-import sys
+
+import random
+
+tens = random.randint(1, 6)  # 十の位 (1〜6)
+ones = random.randint(1, 6)  # 一の位 (1〜6)
+
+number = tens * 10 + ones
+total = tens + ones
+
+print(number)
+print(total)
