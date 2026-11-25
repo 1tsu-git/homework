@@ -3,12 +3,14 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import random
+import sys
 
-tens = random.randint(1, 6)  # 十の位 (1〜6)
-ones = random.randint(1, 6)  # 一の位 (1〜6)
+if len(sys.argv) > 1:
+    digits = int(sys.argv[1])
+else:
+    digits = 1
 
-number = tens * 10 + ones
-total = tens + ones
+rolls = [random.randint(1, 6) for _ in range(digits)]
 
-print(number)
-print(total)
+print("".join(map(str, rolls)))
+print(sum(rolls))
